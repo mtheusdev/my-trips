@@ -1,6 +1,9 @@
 const Main = () => (
   <main>
-    <h1>mytrips</h1>
+    <div>
+      <h1>mytrips</h1>
+      <a href="#">lnk</a>
+    </div>
   </main>
 )
 

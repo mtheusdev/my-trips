@@ -1,5 +1,21 @@
-import Main from 'components/Main'
+import dynamic from 'next/dynamic'
+
+const Map = dynamic(() => import('components/Map'), { ssr: false })
 
 export default function Home() {
-  return <Main />
+  return (
+    <Map
+      places={[
+        {
+          id: '1',
+          name: 'Joinville',
+          slug: 'joinville',
+          location: {
+            latitude: -30,
+            longitude: -50
+          }
+        }
+      ]}
+    />
+  )
 }
